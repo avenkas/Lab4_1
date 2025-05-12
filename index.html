@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Підключення CSS Bootstrap для стилізації -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Підключення jQuery (необхідно для роботи Bootstrap-скриптів) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- Підключення JS Bootstrap для інтерактивних компонентів -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Встановлюємо стилі для різних блоків */
+        .bg-1 { background-color: #1abc9c; color: #ffffff; } /* Зелений фон */
+        .bg-2 { background-color: #2c3e50; color: #ffffff; } /* Темний фон */
+        .bg-3 { background-color: #ffffff; color: #000000; } /* Світлий фон */
+    </style>
+</head>
+<body>
+
+    <!-- Навігаційне меню Bootstrap -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Кнопка для мобільних пристроїв (адаптивне меню) -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span> <!-- Лінії для кнопки "бургер" -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Назва меню -->
+                <a class="navbar-brand" href="#">Me</a>
+            </div>
+            <!-- Елементи меню -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">WHO</a></li>
+                    <li><a href="#">WHAT</a></li>
+                    <li><a href="#">WHERE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Блок з інформацією про себе -->
+    <div class="container-fluid bg-1 text-center">
+        <h3>Who Am I?</h3>
+        <!-- Кругле зображення, яке адаптивно змінюється за розміром екрану -->
+        <img src="bird.jpg" class="img-responsive img-circle" style="display:inline" alt="Bird">
+        <h3>I'm an adventurer</h3>
+    </div>
+
+    <!-- Блок з кнопкою -->
+    <div class="container-fluid bg-2 text-center">
+        <h3>What Am I?</h3>
+        <p>Lorem ipsum..</p>
+        <!-- Кнопка Bootstrap з іконкою "пошуку" -->
+        <a href="#" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-search"></span> Search
+        </a>
+    </div>
+
+    <!-- Блок із сіткою зображень -->
+    <div class="container-fluid bg-3 text-center">
+        <h3>Where To Find Me?</h3>
+        <div class="row">
+            <!-- Кожне зображення займає 4 частини (col-sm-4) із 12 можливих у рядку -->
+            <div class="col-sm-4">
+                <p>Lorem ipsum..</p>
+                <img src="birds1.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum..</p>
+                <img src="birds2.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum..</p>
+                <img src="birds3.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
